@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --clr-primary: #0d8fde;
+  --radius: 12px;
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: inter, sans-serif;
+  line-height: 1.5;
+  background: #fafafa;
+  color: #111;
+}
+
+header {
+  background: var(--clr-primary);
+  color: #fff;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* judul di tengah */
+  position: relative; /* untuk menampung link kanan */
+}
+.nav-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+.nav-link {
+  position: absolute;
+  right: 32px; /* jarak kanan */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* gambar */
+.centered-heading {
+  display: inline-flex; /* teks + kotak jadi satu baris */
+  align-items: center;
+  gap: 0.5rem; /* jarak kotak ↔ teks */
+  margin: 0 auto 1.5rem; /* auto → benar-benar ke tengah */
+  text-align: center;
+}
+.centered-heading::before {
+  content: "";
+  flex: 0 0 8px; /* lebar tetap 8 px */
+  height: 17px;
+  background: var(--clr-primary);
+  border-radius: 2px;
+}
+
+/* pusatkan FIGURE */
+.img-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.img-center img {
+  max-width: 100%; /* responsif */
+  height: auto;
+}
+
+/* ===== 3. ARTICLE CARD ===== */
+.article-card {
+  width: 80%;
+  max-width: 900px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 3rem 4rem;
+  min-height: 500px; /* contoh saja */
+}
+
+/* ===== 4. TYPOGRAPHY ===== */
+li {
+  margin-left: 76px;
+}
+h1::before {
+  content: ""; /* wajib agar pseudo-elemen muncul */
+  display: inline-block; /* supaya bisa diatur ukuran */
+  width: 8px; /* lebar kotak (≈ 8 px) */
+  height: 17px; /* tinggi — samakan kira-kira tinggi teks */
+  margin-right: 0.5rem; /* jarak kotak ↔ teks */
+  background: var(--clr-primary); /* biru yang sama dgn navbar */
+  border-radius: 2px; /* opsional, biar sedikit rounded */
+  vertical-align: baseline; /* sejajarkan dengan baseline teks */
+}
+
+h2::before {
+  content: ""; /* wajib agar pseudo-elemen muncul */
+  display: inline-block; /* supaya bisa diatur ukuran */
+  width: 8px; /* lebar kotak (≈ 8 px) */
+  height: 17px; /* tinggi — samakan kira-kira tinggi teks */
+  margin-right: 0.5rem; /* jarak kotak ↔ teks */
+  background: var(--clr-primary); /* biru yang sama dgn navbar */
+  border-radius: 2px; /* opsional, biar sedikit rounded */
+  vertical-align: baseline; /* sejajarkan dengan baseline teks */
+}
+
+h3::before {
+  content: ""; /* wajib agar pseudo-elemen muncul */
+  display: inline-block; /* supaya bisa diatur ukuran */
+  width: 8px; /* lebar kotak (≈ 8 px) */
+  height: 17px; /* tinggi — samakan kira-kira tinggi teks */
+  margin-right: 0.5rem; /* jarak kotak ↔ teks */
+  background: var(--clr-primary); /* biru yang sama dgn navbar */
+  border-radius: 2px; /* opsional, biar sedikit rounded */
+  vertical-align: baseline; /* sejajarkan dengan baseline teks */
+}
+
+h4::before {
+  content: ""; /* wajib agar pseudo-elemen muncul */
+  display: inline-block; /* supaya bisa diatur ukuran */
+  width: 8px; /* lebar kotak (≈ 8 px) */
+  height: 17px; /* tinggi — samakan kira-kira tinggi teks */
+  margin-right: 0.5rem; /* jarak kotak ↔ teks */
+  background: var(--clr-primary); /* biru yang sama dgn navbar */
+  border-radius: 2px; /* opsional, biar sedikit rounded */
+  vertical-align: baseline; /* sejajarkan dengan baseline teks */
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+  margin-top: 5px;
+}
+.paragraf1 {
+  margin-left: 20px;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-bottom: 0.25rem;
+}
+.paragraf2 {
+  margin-left: 24px;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+h3 {
+  margin-left: 29px;
+  margin-bottom: 0.25rem;
+}
+.paragraf3 {
+  margin-left: 46px;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+h4 {
+  margin-left: 40px;
+  margin-bottom: 0.25rem;
+  text-align: justify;
+}
+.paragraf4 {
+  margin-left: 55px;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* ===== 5. BREAKPOINT ≤ 768px (tablet & phablet) ===== */
+@media (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+  .nav-title {
+    font-size: 1.1rem;
+  }
+  .nav-link {
+    right: 24px;
+    font-size: 0.95rem;
+  }
+
+  .article-card {
+    width: 88%;
+    padding: 2rem;
+    margin: 3rem auto;
+  }
+}
+
+/* ===== 6. BREAKPOINT ≤ 480px (smart-phone) ===== */
+@media (max-width: 480px) {
+  header {
+    padding: 14px 20px;
+  }
+  .nav-title {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .nav-link {
+    right: 20px;
+    font-size: 0.9rem;
+  }
+
+  .article-card {
+    width: 94%;
+    padding: 1.25rem 1rem;
+    margin: 2.5rem auto;
+  }
+  h1 {
+    font-size: 1.35rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.95rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}

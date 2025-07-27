@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Article</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="nav-title">Budidaya Ikan Nila dengan IoT</div>
+      <a href="#" class="nav-link">Home</a>
+    </header>
+
+    <article class="article-card">
+      <h1>1. Pendahuluan</h1>
+      <p class="paragraf1">
+        Perkembangan teknologi di bidang Internet of Things (IoT) telah
+        mengalami kemajuan pesat, ditandai dengan munculnya berbagai inovasi
+        seperti sustainable IoT yang berfokus pada efisiensi energi dan
+        pengurangan limbah, AI-enhanced IoT yang mengintegrasikan kecerdasan
+        buatan untuk prediksi dan personalisasi, serta kesiapan teknologi 6G
+        yang mendukung kecepatan dan konektivitas tinggi antarperangkat. IoT
+        sendiri merupakan sistem yang memungkinkan perangkat pintar saling
+        terhubung dan bertukar data secara otomatis, seperti sistem pengatur
+        suhu rumah, pemantauan kesehatan pasien secara real-time, hingga
+        pemodelan digital twin dan integrasi blockchain untuk keamanan data
+        (Lusita, 2023).
+      </p>
+      <br />
+      <p class="paragraf1">
+        Dalam konteks budidaya ikan mujair di Indonesia, pemanfaatan teknologi
+        IoT masih sangat terbatas, sementara permasalahan klasik seperti
+        pemantauan kualitas air secara manual masih menjadi kendala utama.
+        Peternak sering menghadapi kesulitan dalam mengontrol pH, suhu, dan
+        kualitas air, padahal ketiga faktor ini sangat memengaruhi pertumbuhan
+        dan kelangsungan hidup ikan (Chen et al., 2022). Ketergantungan pada
+        metode pemeliharaan tradisional membuat proses pemantauan tidak efisien
+        dan rawan keterlambatan dalam merespon perubahan lingkungan yang bisa
+        menyebabkan penurunan produktivitas bahkan kematian ikan (Tsai et al.,
+        2022). Selain itu, keterbatasan tenaga kerja dan tidak adanya sistem
+        pemantauan daring yang dapat menjadwalkan pengawasan secara rutin,
+        semakin memperbesar potensi risiko tersebut.
+      </p>
+      <h2>2. Metodologi</h2>
+      <p class="paragraf2">
+        Alur penelitian ini disusun secara sistematis menggunakan metode
+        Waterfall, di mana setiap tahap diselesaikan sebelum berlanjut ke tahap
+        berikutnya. Pendekatan ini memastikan pengembangan sistem berjalan
+        terstruktur, mulai dari identifikasi masalah, perancangan, implementasi,
+        hingga pemeliharaan. Diagram berikut menggambarkan alur penelitian
+        secara visual untuk memudahkan pemahaman tahapan yang dilakukan.
+      </p>
+      <figure class="img-center">
+        <img src="assets/waterfall.png" alt="Diagram model waterfall" />
+      </figure>
+      <h3>3. Penjelasan gambar Metode Waterfall</h3>
+      <p class="paragraf3">
+        Berdasarkan gambar di atas, alur penelitian ini terdiri dari tujuh
+        tahapan utama. Proses dimulai dari identifikasi masalah, yaitu mengenali
+        kendala petambak seperti pemantauan kualitas air yang tidak efisien,
+        pemberian garam manual, dan kurangnya notifikasi kondisi kolam kepada
+        pemilik. Selanjutnya, pada tahap analisis kebutuhan, dikumpulkan data
+        terkait kebutuhan pengguna, pemilihan sensor, mikrokontroler, dan
+        parameter penting lainnya. Setelah itu, dilakukan desain sistem berupa
+        rancangan skematik perangkat keras dan antarmuka pemantauan jarak jauh.
+        Tahap implementasi meliputi perakitan perangkat, pemrograman sensor, dan
+        integrasi ke platform IoT. Pengujian dilakukan untuk memastikan
+        keakuratan data, stabilitas konektivitas, dan efektivitas sistem
+        otomatisasi. Sistem kemudian diterapkan langsung di tambak ikan dan
+        dilanjutkan dengan pelatihan pengguna. Terakhir, pemeliharaan dilakukan
+        secara berkala untuk evaluasi kinerja, penggantian komponen yang rusak,
+        dan pembaruan sistem agar tetap optimal.
+      </p>
+      <h4>4. Kebutuhan Perangkat Keras dan Perangkat Lunak</h4>
+      <p class="paragraf4">
+        Adapun perangkat keras (Hardware) yang dibutuhkan pada Perancangan Alat
+        Montoring Dan Pengendalian Budidaya Ikan Nila Berbasi IoT sebagai
+        berikut.
+      </p>
+      <ul>
+        <li>Mikrokontroler esp 32</li>
+        <li>LCD I2C</li>
+        <li>Esp 32 cam</li>
+        <li>Stepdown 20A</li>
+        <li>Sensor pH</li>
+        <li>Sensor Suhu</li>
+        <li>Servo</li>
+        <li>Kabel Jumper</li>
+        <li>RTC</li>
+      </ul>
+      <p class="paragraf4">
+        Perangkat lunak (software) yang digunakan dalam perancangan alat
+        monitoring dan pengendalian budidaya ikan nila berbasis IoT meliputi
+        berbagai tools yang mendukung proses pengembangan sistem secara
+        menyeluruh. Platform IoT seperti Blynk digunakan sebagai media
+        monitoring untuk pemantauan data kualitas air secara real-time,
+        sedangkan aplikasi berbasis web atau mobile menampilkan informasi
+        kondisi kolam kepada pengguna. Selain itu, perangkat lunak pemrograman
+        seperti Arduino IDE digunakan untuk mengontrol sensor dan aktuator pada
+        mikrokontroler, sementara Fritzing dipakai untuk merancang skema
+        rangkaian elektronik, dan Draw IO digunakan untuk membuat flowchart
+        serta diagram sistem. Database juga diterapkan untuk menyimpan data
+        historis pemantauan, sedangkan algoritma pemrosesan data digunakan untuk
+        menganalisis perubahan kualitas air secara otomatis dan mengirimkan
+        notifikasi kepada pemilik peternakan, sehingga sistem ini mampu berjalan
+        secara efisien dan responsif dalam mendukung budidaya ikan nila.
+      </p>
+      <h4>5. Rangakaian Sistem</h4>
+      <p class="paragraf4">
+        Gambar di bawah menunjukkan perancangan sistem secara keseluruhan, di
+        mana ESP32 berperan sebagai pengendali utama yang terhubung dengan
+        berbagai sensor, motor servo untuk pengatur pakan dan pH, RTC untuk
+        mengatur waktu pemberian pakan otomatis sesuai jadwal, serta LCD I2C
+        sebagai penampil nilai sensor secara langsung.
+      </p>
+      <img src="assets/wiring.png" class="center-img" />
+      <h2>6. Kesimpulan</h2>
+      <p class="paragraf2">
+        Berdasarkan penelitian yang telah dilakukan mengenai implementasi
+        teknologi Internet of Things (IoT) dalam sistem budidaya ikan nila atau
+        mujair, dapat disimpulkan bahwa penerapan IoT terbukti efektif dalam
+        pemantauan kondisi lingkungan tambak secara real-time, di mana
+        sensor-sensor yang terintegrasi mampu mengukur parameter penting seperti
+        pH dan suhu dengan akurasi tinggi, sehingga memungkinkan deteksi dini
+        terhadap perubahan yang berpotensi mengganggu kestabilan ekosistem.
+        Selain sebagai alat pemantauan, sistem IoT juga berfungsi sebagai
+        mekanisme pengendalian, di mana sistem notifikasi dan respon otomatis
+        memungkinkan pengambilan langkah mitigasi cepat, seperti penyesuaian
+        dosis bahan penetral untuk menstabilkan pH, sehingga risiko kematian
+        ikan akibat kondisi lingkungan yang tidak ideal dapat diminimalkan.
+        Integrasi sistem notifikasi pada pemantauan kolam dan pengaturan
+        pemberian pakan juga meningkatkan efisiensi pengelolaan tambak,
+        mendukung pengambilan keputusan yang lebih cepat, dan berkontribusi pada
+        peningkatan produktivitas usaha tambak secara keseluruhan.
+      </p>
+      <a
+        href="https://journal.stieamkop.ac.id/index.php/seiko/article/view/9102"
+        class="paragraf2"
+      >
+        Full download
+      </a>
+    </article>
+  </body>
+</html>
